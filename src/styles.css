@@ -1,0 +1,679 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+ 
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+    
+    padding: 0;
+    display: flex;
+    
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+}
+
+.card {
+    margin-top:20px ;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b0b0b0;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: background 0.3s, border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f50057;
+    transform: translateY(-3px);
+}
+
+.button-link {
+    background: none;
+    color: #ff4081;
+
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.button-link:hover {
+    color: #f50057;
+}
+
+.task-box {
+    margin-top:20px ;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.task-box:hover {
+    transform: translateY(-3px);
+}
+
+.task-box p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.navbar {
+
+    display: flex;
+    min-width:1650px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.navbar button {
+    background-color: #ffffff;
+    color: #ff4081;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #f0f2f5;
+    transform: translateY(-3px);
+}
+
+/* Employee Dashboard Specific Styles */
+.employee-dashboard .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-dashboard .form-group {
+    width: 100%;
+    max-width: 500px;
+}
+
+.employee-dashboard .form-group input,
+.employee-dashboard .form-group select {
+    width: calc(100% - 20px);
+    margin: 5px 10px;
+}
+
+.employee-dashboard .button {
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.employee-dashboard .task-list {
+    width: 100%;
+    max-width: 800px;
+}
+
+.employee-dashboard .task-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1270px;
+}
+
+.employee-dashboard .task-box .button {
+    width: auto;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+.task-box label {
+    color: white;
+    
+}
+
+.loginbutton{
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+#logincontainer{
+    position: relative;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width:600px
+}
+#forminput{
+    width: 800px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    align-items: start ;
+    justify-content: space-between;
+    
+}
+#atext {
+    height: 350px;
+    resize: none;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    width: 580px;
+    background-color: transparent;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+.left-group{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    right: 150px;
+    top: 20px;
+    width: 500px;
+    gap: 20px;
+}
+#textdetails {
+    display: flex;
+    width: 800px;
+    gap: 90px;
+   
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#area {
+    width: 60%;
+    word-wrap: break-word;
+}
+
+#othertext {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    word-wrap: break-word;
+}
+#managertask{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.textwork{
+    display: flex;
+    flex-direction: row;
+    
+    width: 800px;
+   
+}
+#managernote input{
+    width: 800px;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* styles.css */
+
+/* styles.css */
+
+.react-datepicker-wrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.react-datepicker {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.react-datepicker__current-month {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.react-datepicker__day-name {
+    color: #999;
+    font-weight: bold;
+}
+
+.react-datepicker__day {
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.react-datepicker__day--selected {
+    background-color: transparent;
+    color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background-color: transparent;
+    color: #fff;
+}
+
+.react-datepicker__day--today {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: #4a90e2;
+}
+
+.react-datepicker__day:hover {
+    background-color: transparent;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--keyboard-selected:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-control{
+   padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+/* styles.css */
+
+/* styles.css */
+
+.report-section {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.report-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.report-result h4 {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.report-result ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.report-result li {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 20px;
+}
+
+.invite input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: background 0.3s, border 0.3s;
+}
+
+
+.invite select {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.invitecontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.invitecontainer button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.notes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.notes-table th,
+.notes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 200px; /* Adjust this value as needed */
+}
+
+.notes-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+
+
+
+
+.notes-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.date-section {
+    margin-bottom: 40px;
+}
+
+/* styles.css */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 4px solid transparent;
+    border-top: 4px solid #ff4081;
+    border-right: 4px solid #ff4081;
+    border-radius: 50%;
+    animation: spin 1s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081, 0 0 70px #ff4081;
+    }
+    100% {
+        box-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081, 0 0 70px #ff4081, 0 0 80px #ff4081;
+    }
+}
+
+.loading-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.loading-button.loading {
+    background-color: #222;
+    pointer-events: none;
+}
+
+.loading-button .loading-spinner {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.no-link {
+    color: #000; /* or any other color that indicates it is plain text */
+}
+.gsreport{
+    display: flex;
+    justify-content: space-between;
+}
+.broad-area-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+   
+}
+.broad-area-item{
+     display: flex;
+     flex-direction: row;
+  justify-content: space-between;
+}
+
+/* src/styles.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.landing-page {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #6c757d;
+}
+/* src/styles.css */
+
+/* Existing styles */
+
+.payslip {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.payslip p {
+    color: #ffffff;
+}
+
+.payslip h3 {
+    color: #ffffff;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
